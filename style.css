@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+body {
+  background: url("https://static.vecteezy.com/ti/vetor-gratis/p1/2184723-tecnologia-com-fundo-azul-escuro-gr%C3%A1tis-vetor.jpg");
+  /*background: linear-gradient(230.65deg, #499CFE 27.49%, #9CC8FC 83.19%);*/
+  font-family: "Lobster", cursive;
+}
+
+.container {
+  background: #ecf4ff;
+  /*margin: 204px;*/
+  margin: 10%;
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  color: #1c1c1c;
+  padding: 64px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  /*para dizer que vai usara flex box: alinhar os elementos vertical ou horiz....*/
+  display: flex;
+}
+.perfil-foto {
+  border-radius: 460px;
+  max-height: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.titulo {
+  margin-left: 20px;
+}
+
+/*estiliza o H1 apenas de dentro da class titulo*/
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+.tema button {
+  /*pode usar alignself pois esta usando display: flex; no elemento pai*/
+  align-self: flex-end;
+  font-size: 24px;
+  /*topo e baixo 8px, lado e e direito 16px*/
+  padding: 8px 16px;
+  font-weight: 400;
+  background: #ecf4ff;
+  border-radius: 60px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+}
+
+.projetos {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(230.65deg, #499cfe 27.49%, #9cc8fc 83.19%);
+  border-radius: 20px;
+  box-shadow: 6px 6px 6px #0e1d2f;
+  padding: 32px;
+}
+
+.projetos-titulo {
+  font-weight: 700;
+  font-size: 36px;
+}
+.projetos-item-lista {
+  list-style-type: none;
+  font-weight: 400;
+  font-size: 24px;
+  /*alturada linha, pra não ficarem muto proximas*/
+  line-height: 40px;
+}
+a {
+  color: #1c1c1c;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #499cfe;
+  transition: 0.7s;
+  text-decoration: underline;
+}
+
+.icones-redes {
+  max-height: 25px;
+  max-width: 25px;
+}
+
+.dark {
+  /*background: linear-gradient(236.85deg, #375b86 27.26%, #6b87a9 96.03%);*/
+  background: url(https://png.pngtree.com/thumb_back/fw800/background/20190222/ourmid/pngtree-ppt-dark-technology-style-background-backgroundppt-template-backgroundtechnological-image_58969.jpg);
+}
+
+.dark .container {
+  background: #474876;
+  color: #f6f6f6;
+}
+
+.dark .tema button {
+  background: #020806;
+  color: #f6f6f6;
+  border: 2px solid #f7f7f7;
+  box-shadow: 6px 6px 6px #f7f7f7;
+}
+
+.dark .projetos {
+  /*pois estava alterando a fonte de "projetos" para cor branca, mantive escura*/
+  color: #1c1c1c;
+}
